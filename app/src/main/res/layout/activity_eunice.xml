@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Information"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSERT STOCKS (HARDCODE)" />
+
+    <TextView
+        android:id="@+id/selectStockTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select stock symbol:"
+        android:textStyle="bold"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GOOGL"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAmazon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMZN"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSSNLF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SSNLF"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/displayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISPLAY STOCK INFO"
+        android:textStyle="bold"
+    android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/stockInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textStyle="bold"
+    android:text="" />
+</LinearLayout>
